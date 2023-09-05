@@ -11,7 +11,7 @@ const SetupPage = async () => {
     where: {
       members: {
         some: {
-          id: profile.id,
+          profileId: profile.id,
         },
       },
     },
