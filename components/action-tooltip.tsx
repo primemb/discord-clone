@@ -32,7 +32,7 @@ const ActionTooltip = ({
   return (
     <TooltipProvider>
       <Tooltip delayDuration={50}>
-        <TooltipTrigger>{children}</TooltipTrigger>
+        <TooltipTrigger asChild>{children}</TooltipTrigger>
         <TooltipContent side={side} align={align}>
           <p className="font-semibold text-sm capitalize">
             {label.toLowerCase()}
