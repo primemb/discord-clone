@@ -31,7 +31,7 @@ const FileUpload = ({ endpoint, onChange, value }: FileUploadProps) => {
 
   return (
     <UploadDropzone
-      className="h-[140px] ut-label:text-lg ut-label:text-stone-500 ut-allowed-content:text-stone-400 ut-button:bg-blue-500 ut-button:ut-readying:bg-blue-500/50 ut-button:p-4 ut-button:my-2"
+      className="h-[140px] border-dashed ut-label:text-lg ut-label:text-blue-500 ut-allowed-content:text-stone-400 ut-button:bg-blue-500 ut-button:ut-readying:bg-blue-500/50 ut-button:p-4 ut-button:my-2"
       endpoint={endpoint}
       onClientUploadComplete={(res) => {
         onChange(res?.[0].url);
